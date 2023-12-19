@@ -16,6 +16,7 @@ app.listen(3000);
 app.use(express.static('public'));
 app.use(morgan('tiny'))
 
+// handler events also one of the middle wares
 app.get('/', (req, res) => {
   const blogs = [
     {title: 'Yoshi finds eggs', snippet: 'Lorem ipsum dolor sit amet consectetur'},
